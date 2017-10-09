@@ -1,5 +1,5 @@
 {
-  "name": "vue-long-press",
+  "name": "vue-long-press-directive",
   "version": "0.0.0",
   "description": "Long press directive plugin for Vue.js",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kapetan/vue-long-press.git"
+    "url": "git+https://github.com/kapetan/vue-long-press-directive.git"
   },
   "keywords": [
     "vue",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kapetan/vue-long-press/issues"
+    "url": "https://github.com/kapetan/vue-long-press-directive/issues"
   },
-  "homepage": "https://github.com/kapetan/vue-long-press#readme",
+  "homepage": "https://github.com/kapetan/vue-long-press-directive#readme",
   "dependencies": {
     "vueify": "^9.4.1"
   },
