@@ -4,9 +4,9 @@
   "description": "Long press directive plugin for Vue.js",
   "main": "index.js",
   "scripts": {
-    "demo-watch": "wzrd demo/index.js:demo/bundle.js",
-    "demo-build": "browserify demo/index.js -o demo/bundle.js",
-    "test-build": "mkdir -p dist/test && browserify test/index.js -o dist/test/index.js --node --no-bundle-external",
+    "demo-watch": "wzrd demo/index.js:demo/bundle.js -- -t vueify",
+    "demo-build": "browserify demo/index.js -o demo/bundle.js -t vueify",
+    "test-build": "mkdir -p dist/test && browserify test/index.js -o dist/test/index.js -t vueify --node --no-bundle-external",
     "test": "npm run lint && npm run test-build && tape dist/test",
     "lint": "standard --verbose"
   },
@@ -28,9 +28,6 @@
     "url": "https://github.com/kapetan/vue-long-press-directive/issues"
   },
   "homepage": "https://github.com/kapetan/vue-long-press-directive#readme",
-  "dependencies": {
-    "vueify": "^9.4.1"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
@@ -39,12 +36,8 @@
     "standard": "^10.0.3",
     "tape": "^4.8.0",
     "vue": "^2.4.4",
+    "vueify": "^9.4.1",
     "wzrd": "^1.5.0"
-  },
-  "browserify": {
-    "transform": [
-      "vueify"
-    ]
   },
   "standard": {
     "ignore": [
