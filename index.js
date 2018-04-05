@@ -24,7 +24,7 @@ exports.install = function (Vue, options) {
     },
     unbind: function (el) {
       clearTimeout(this._timeout)
-      el.addEventListener('mousedown', this._onmousedown)
+      el.removeEventListener('mousedown', this._onmousedown)
       document.removeEventListener('mouseup', this._onmouseup)
     }
   })
